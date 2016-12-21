@@ -5,8 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>ajax+servlet+jquery实例</title>
+<script type="text/javascript" src="framework/jquery/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-
+ <!-- 省份 -->
+ <select>
+ 	<option>--请选择省份--</option>
+ 	<option>河南省</option>
+ 	<option>河北省</option>
+ 	<option>福建省</option>
+ </select>
 </body>
 </html>
