@@ -9,11 +9,13 @@
 </head>
 <body>
  <!-- 省份 -->
- <select>
+ <select id="province">
  	<option>--请选择省份--</option>
  	<option>河南省</option>
- 	<option>河北省</option>
- 	<option>福建省</option>
+ </select>
+ <select id="city">
+ 	<option>--请选择城市--</option>
  </select>
 </body>
+<script type="text/javascript" src="product/servletjs/province.js"></script><!-- 这个script的引入必须放在上述body的后面，要不然jquery将不起作用 -->
 </html>
