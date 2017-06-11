@@ -17,7 +17,7 @@ import org.json.JSONArray;
  */
 public class AngularjsCityServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -30,31 +30,31 @@ public class AngularjsCityServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");//ÉèÖÃÇëÇó±àÂëÎª"UTF-8"
+		request.setCharacterEncoding("utf-8");//è®¾ç½®è¯·æ±‚ç¼–ç ä¸º"UTF-8"
 		String province=request.getParameter("province");
-		response.setCharacterEncoding("UTF-8");//ÉèÖÃÏìÓ¦±àÂëÎªUTF-8 ×¢ÒâÕâ¸ö±ØĞë·ÅÔÚwriteÇ°Ãæ²ÅÓĞĞ§!!
+		response.setCharacterEncoding("UTF-8");//è®¾ç½®å“åº”ç¼–ç ä¸ºUTF-8 æ³¨æ„è¿™ä¸ªå¿…é¡»æ”¾åœ¨writeå‰é¢æ‰æœ‰æ•ˆ!!
 		PrintWriter write=response.getWriter();
-		request.setAttribute("data", "ĞÅÑôÊĞ");
-		List<String> list=new ArrayList<>();
-		JSONArray jsonArray = new JSONArray();  
-		if("ºÓÄÏÊ¡".equals(province)){
-			list.add("Ö£ÖİÊĞ");
-			list.add("ÂåÑôÊĞ");
-			list.add("ÉÌÇğÊĞ");
-			list.add("°²ÑôÊĞ");
-			list.add("ÄÏÑôÊĞ");
-			list.add("¿ª·âÊĞ");
-			list.add("Æ½¶¥É½");
-			list.add("½¹×÷ÊĞ");
-			list.add("ĞÂÏçÊĞ");
-			list.add("º×±ÚÊĞ");
-			list.add("å§ÑôÊĞ");
-			list.add("Ğí²ıÊĞ");
-			list.add("ÈıÃÅÏ¿");
-			list.add("ĞÅÑôÊĞ");
-			list.add("ÖÜ¿ÚÊĞ");
-			list.add("×¤Âíµê");
-			list.add("¼ÃÔ´ÊĞ");
+		request.setAttribute("data", "ä¿¡é˜³å¸‚");
+		List<String> list=new ArrayList<String>();
+		JSONArray jsonArray = new JSONArray();
+		if("æ²³å—çœ".equals(province)){
+			list.add("éƒ‘å·å¸‚");
+			list.add("æ´›é˜³å¸‚");
+			list.add("å•†ä¸˜å¸‚");
+			list.add("å®‰é˜³å¸‚");
+			list.add("å—é˜³å¸‚");
+			list.add("å¼€å°å¸‚");
+			list.add("å¹³é¡¶å±±");
+			list.add("ç„¦ä½œå¸‚");
+			list.add("æ–°ä¹¡å¸‚");
+			list.add("é¹¤å£å¸‚");
+			list.add("æ¿®é˜³å¸‚");
+			list.add("è®¸æ˜Œå¸‚");
+			list.add("ä¸‰é—¨å³¡");
+			list.add("ä¿¡é˜³å¸‚");
+			list.add("å‘¨å£å¸‚");
+			list.add("é©»é©¬åº—");
+			list.add("æµæºå¸‚");
 			jsonArray.put(list);
 			write.print(jsonArray);
 		}

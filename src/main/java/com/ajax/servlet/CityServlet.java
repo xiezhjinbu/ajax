@@ -9,46 +9,46 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * ³ÇÊĞ¶ş¼¶Áª¶¯²Ëµ¥ servlet°æ
+ * åŸå¸‚äºŒçº§è”åŠ¨èœå• servletç‰ˆ
  */
 public class CityServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
 
 	/**
-	 * get·½·¨ÇëÇó
-	 * ´¦Àí£ºµ±ÓÃ»§ÓÃget·½·¨ÇëÇóµÄÊ±ºòÖ±½ÓÈÃËüµ÷ÓÃdoPost()·½·¨
+	 * getæ–¹æ³•è¯·æ±‚
+	 * å¤„ç†ï¼šå½“ç”¨æˆ·ç”¨getæ–¹æ³•è¯·æ±‚çš„æ—¶å€™ç›´æ¥è®©å®ƒè°ƒç”¨doPost()æ–¹æ³•
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doPost(request, response);
 	}
 
 	/**
-	 * postÇëÇó
+	 * postè¯·æ±‚
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");//ÉèÖÃÇëÇó±àÂëÎª"UTF-8"
+		request.setCharacterEncoding("utf-8");//è®¾ç½®è¯·æ±‚ç¼–ç ä¸º"UTF-8"
 		String province=request.getParameter("province");
-		response.setCharacterEncoding("UTF-8");//ÉèÖÃÏìÓ¦±àÂëÎªUTF-8 ×¢ÒâÕâ¸ö±ØĞë·ÅÔÚwriteÇ°Ãæ²ÅÓĞĞ§!!
+		response.setCharacterEncoding("UTF-8");//è®¾ç½®å“åº”ç¼–ç ä¸ºUTF-8 æ³¨æ„è¿™ä¸ªå¿…é¡»æ”¾åœ¨writeå‰é¢æ‰æœ‰æ•ˆ!!
 		PrintWriter write=response.getWriter();
-		if("ºÓÄÏÊ¡".equals(province)){
-			write.println("<option>Ö£ÖİÊĞ</option>");
-			write.println("<option>ÂåÑôÊĞ</option>");
-			write.println("<option>ÉÌÇğÊĞ</option>");
-			write.println("<option>°²ÑôÊĞ</option>");
-			write.println("<option>ÄÏÑôÊĞ</option>");
-			write.println("<option>¿ª·âÊĞ</option>");
-			write.println("<option>Æ½¶¥É½</option>");
-			write.println("<option>½¹×÷ÊĞ</option>");
-			write.println("<option>ĞÂÏçÊĞ</option>");
-			write.println("<option>º×±ÚÊĞ</option>");
-			write.println("<option>å§ÑôÊĞ</option>");
-			write.println("<option>Ğí²ıÊĞ</option>");
-			write.println("<option>ÈıÃÅÏ¿</option>");
-			write.println("<option>ĞÅÑôÊĞ</option>");
-			write.println("<option>ÖÜ¿ÚÊĞ</option>");
-			write.println("<option>×¤Âíµê</option>");
-			write.println("<option>¼ÃÔ´ÊĞ</option>");
+		if("æ²³å—çœ".equals(province)){
+			write.println("<option>éƒ‘å·å¸‚</option>");
+			write.println("<option>æ´›é˜³å¸‚</option>");
+			write.println("<option>å•†ä¸˜å¸‚</option>");
+			write.println("<option>å®‰é˜³å¸‚</option>");
+			write.println("<option>å—é˜³å¸‚</option>");
+			write.println("<option>å¼€å°å¸‚</option>");
+			write.println("<option>å¹³é¡¶å±±</option>");
+			write.println("<option>ç„¦ä½œå¸‚</option>");
+			write.println("<option>æ–°ä¹¡å¸‚</option>");
+			write.println("<option>é¹¤å£å¸‚</option>");
+			write.println("<option>æ¿®é˜³å¸‚</option>");
+			write.println("<option>è®¸æ˜Œå¸‚</option>");
+			write.println("<option>ä¸‰é—¨å³¡</option>");
+			write.println("<option>ä¿¡é˜³å¸‚</option>");
+			write.println("<option>å‘¨å£å¸‚</option>");
+			write.println("<option>é©»é©¬åº—</option>");
+			write.println("<option>æµæºå¸‚</option>");
 		}
 	}
 

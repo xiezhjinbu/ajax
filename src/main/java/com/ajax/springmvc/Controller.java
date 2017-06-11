@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * springmvc×÷ÎªajaxºóÌ¨½»»¥
+ * springmvcä½œä¸ºajaxåå°äº¤äº’
  * @author lijun
  *
  */
@@ -17,25 +17,25 @@ public class Controller {
 	@RequestMapping("/springmvcajax")
 	@ResponseBody
 	public List<String> post(String province){
-		List<String> list=new ArrayList<>();
-		if("ºÓÄÏÊ¡".equals(province)){
-			list.add("Ö£ÖİÊĞ");
-			list.add("ÂåÑôÊĞ");
-			list.add("ÉÌÇğÊĞ");
-			list.add("°²ÑôÊĞ");
-			list.add("ÄÏÑôÊĞ");
-			list.add("¿ª·âÊĞ");
-			list.add("Æ½¶¥É½");
-			list.add("½¹×÷ÊĞ");
-			list.add("ĞÂÏçÊĞ");
-			list.add("º×±ÚÊĞ");
-			list.add("å§ÑôÊĞ");
-			list.add("Ğí²ıÊĞ");
-			list.add("ÈıÃÅÏ¿");
-			list.add("ĞÅÑôÊĞ");
-			list.add("ÖÜ¿ÚÊĞ");
-			list.add("×¤Âíµê");
-			list.add("¼ÃÔ´ÊĞ");
+		List<String> list=new ArrayList<String>();
+		if("æ²³å—çœ".equals(province)){
+			list.add("éƒ‘å·å¸‚");
+			list.add("æ´›é˜³å¸‚");
+			list.add("å•†ä¸˜å¸‚");
+			list.add("å®‰é˜³å¸‚");
+			list.add("å—é˜³å¸‚");
+			list.add("å¼€å°å¸‚");
+			list.add("å¹³é¡¶å±±");
+			list.add("ç„¦ä½œå¸‚");
+			list.add("æ–°ä¹¡å¸‚");
+			list.add("é¹¤å£å¸‚");
+			list.add("æ¿®é˜³å¸‚");
+			list.add("è®¸æ˜Œå¸‚");
+			list.add("ä¸‰é—¨å³¡");
+			list.add("ä¿¡é˜³å¸‚");
+			list.add("å‘¨å£å¸‚");
+			list.add("é©»é©¬åº—");
+			list.add("æµæºå¸‚");
 		}
 		return list;
 	}
